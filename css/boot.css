@@ -1,0 +1,220 @@
+body {
+  font-family: "Almarai", sans-serif;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Cairo", sans-serif;
+  font-family: "Lateef", cursive;
+  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Noto Naskh Arabic", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Secular One", sans-serif;
+  margin: 0.1px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* /////scrollbar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
+}
+/* ///////////////////عام */
+:root {
+  --dark: #19283f;
+  --gre: #4750d9;
+  --red-btn: #4750d9;
+  --yallow: #ffc400;
+  --selver: white;
+}
+/* /////للبتن  */
+.main-btn {
+  background-color: var(--red-btn);
+  color: var(--selver);
+  transition: 0.3s;
+}
+.main-btn:hover {
+  background: var(--yallow);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--gre);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* //////////////////// */
+.navbar {
+  background: var(--dark);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link .active {
+  color: var(--yallow);
+}
+.search {
+  border-left: 1px solid var(--yallow);
+}
+.search svg {
+  color: var(--yallow);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--gre);
+}
+/* ///////////////////////////////////////////////////////////////////////// landing */
+
+.landing {
+  background: linear-gradient(rgba(25, 40, 63), rgba(4, 9, 30, 0.7)),
+    url("../img/back.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 76px);
+}
+.main-title svg {
+  font-size: 50px;
+  color: var(--yallow);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////fiuture */
+.feature .icons {
+  height: 200px;
+}
+.feature .icons svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feature .icons .icon {
+  color: var(--gre);
+}
+.feature h4 {
+  color: var(--yallow);
+}
+/* //////////////////////////////////////////////////////our-title */
+.our-title {
+  background-color: var(--selver);
+}
+.our-title ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+.our-title ul li:hover,
+.our-title ul li:focus {
+  background-color: var(--red-btn);
+  color: var(--yallow);
+}
+.our-title .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-title .box::before {
+  content: attr(work-box);
+  position: absolute;
+  background-color: #ffc400a6;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3s all;
+  transform: translatey(calc(-100% - 5px));
+}
+.our-title .box:hover:before {
+  transform: translatey(0);
+}
+/* ///////////////////////////////////////////////// stuff */
+.text-stuff {
+  max-width: 700px;
+}
+/* //////////////////////////////////////////////team */
+.team {
+  background-color: var(--selver);
+}
+.team h4 {
+  color: var(--yallow);
+}
+.team .box h4 {
+  color: white;
+  background-color: var(--gre);
+}
+/* ////////////////////////////////////////////////////////start */
+.start {
+  background-color: var(--dark);
+}
+/* ///////////////////////////////////////////////////////subscrip */
+.subscrip {
+  background-color: var(--yallow);
+}
+.subscrip h5 {
+  color: var(--dark);
+}
+.subscrip input {
+  border-color: transparent transparent var(--selver) transparent;
+}
+.subscrip input:focus {
+  outline: none;
+}
+.subscrip input::placeholder {
+  color: white;
+}
+.subscrip a {
+  background-color: var(--gre) !important;
+}
+.subscrip a:hover {
+  background-color: var(--yallow) !important;
+  border: 1px solid var(--gre);
+}
+/* ////////////////////////////////////////////////////foot */
+.ulli li:hover {
+  color: var(--yallow);
+}
+
+.foot {
+  background-color: var(--dark);
+}
+.foot .coby span {
+  color: var(--gre);
+}
+.foot .raite span {
+  color: var(--yallow);
+}
+.fase {
+  color: #1877f2;
+}
+.twit {
+  color: #1da1f2;
+}
+.googel {
+  color: #dd4b39;
+}
+.git {
+  color: #4078c0;
+}
