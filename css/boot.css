@@ -93,6 +93,9 @@ html {
   background-repeat: no-repeat;
   min-height: calc(100vh - 76px);
 }
+.landing h1{
+  font-size: 25px;
+}
 .main-title svg {
   font-size: 50px;
   color: var(--yallow);
